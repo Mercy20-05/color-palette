@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Color Palette Generator</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome for clean lock/copy icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+<body>
+  <!-- Header Bar -->
+  <header class="app-header">
+    <div class="logo">
+      <i class="fa-solid fa-palette"></i>
+      <span>PaletteCraft</span>
+    </div>
+    <div class="controls">
+      <span class="hint">Press <kbd>Spacebar</kbd> or click</span>
+      <button id="generate-btn" class="btn primary-btn">
+        <i class="fa-solid fa-arrows-rotate"></i> Generate Palette
+      </button>
+    </div>
+  </header>
+
+  <!-- Color Palette Container (5 Swatches) -->
+  <main class="palette-container" id="palette-container">
+    <!-- Swatches are rendered dynamically via JavaScript -->
+  </main>
+
+  <!-- Toast Notification for Copy Feedback -->
+  <div id="toast" class="toast" role="alert" aria-live="polite">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toast-message">Copied to clipboard!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
